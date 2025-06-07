@@ -1,0 +1,29 @@
+.Body {
+  text-align: center;
+  padding: 3%;
+  font-family: Arial, sans-serif;
+}
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 1%;
+  row-gap: 3%;
+  margin-top: 3%;
+}
+
+.card {
+  padding: 4%;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #0000002f;
+  text-align: left;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.1);
+  background-color: #ffffff;
+  box-shadow: 0 12px 20px #00000083;
+}

@@ -1,0 +1,9 @@
+.detail-card {
+  text-align: left;
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #fefefe;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
