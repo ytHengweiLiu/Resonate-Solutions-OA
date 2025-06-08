@@ -1,7 +1,18 @@
 .Body {
   text-align: center;
   padding: 3%;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #e8f0ff);
+  color: #333;
+  width: 100%;
+  height: 100%;
+}
+
+.Body h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #0077cc;
+  margin-bottom: 2rem;
 }
 
 .contacts-grid {
@@ -14,7 +25,7 @@
 
 .card {
   padding: 4%;
-  background: #f9f9f9;
+  background: linear-gradient(120deg, #ffffff, #e6f7ff);
   border-radius: 8px;
   box-shadow: 0 0 8px #0000002f;
   text-align: left;
@@ -22,8 +33,54 @@
   cursor: pointer;
 }
 
+.card h2 {
+  font-size: 1.5rem;
+  color: #003d99;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0.4rem 0;
+  color: #444;
+}
+
 .card:hover {
   transform: translateY(-10px) scale(1.1);
   background-color: #ffffff;
   box-shadow: 0 12px 20px #00000083;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1%;
+}
+
+.nav-bar input[type="text"],
+.nav-bar select {
+  padding: 1%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 15%;
+}
+
+.no-results {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .controls input,
+  .controls select {
+    font-size: 0.95rem;
+  }
 }
